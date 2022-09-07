@@ -26,7 +26,7 @@ To run end to end tests:
 3. Click on 'Start E2E testing in chrome' button
 4. Click on e2e.cy.js
 
-Note: The application should be up running before executing cypress tests.
+Note: The application should be up and running before executing cypress tests.
 
 ### `npm test`
 
