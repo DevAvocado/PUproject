@@ -28,7 +28,7 @@ function App() {
         <div className="App-inputs">
           <input
             autoFocus
-            placeholder="Type your todo here..."
+            placeholder="Add course name here"
             value={item}
             onChange={e => setItem(e.target.value)}
             onKeyPress={e => handleKeyPress(e)}
