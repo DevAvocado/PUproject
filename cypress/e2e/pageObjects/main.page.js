@@ -4,6 +4,14 @@ class MainPage {
         return cy.get('input');
     }
 
+    get plusButton() {
+        return cy.get('button');
+    }
+
+    get courseDeleteButton() {
+        return cy.get('.App-tick');
+    }
+
     visit() {
         cy.visit('http://localhost:3000/');
 
@@ -11,19 +19,14 @@ class MainPage {
     }
 
     addCourse(courseName) {
-        // const inputField = cy.get('input');
-        
-        const plusButton = cy.get('button');
-
         this.inputField.type(courseName);
-        plusButton.click();
+        this.plusButton.click();
 
         return this;
     }
 
     deleteCourse() {
-        cy.get('.App-tick').click();
-
+        this.courseDeleteButton.click();
         return this;
     }
 }
