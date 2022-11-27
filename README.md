@@ -1,11 +1,14 @@
+### `npm install`
+to install node modules
+
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Open Cypress tests
+### End to end automated tests
+I decided to implement the page object design pattern for the sake of automated tests
 
-run Cypress.
 - Tests can be run in Chrome, Edge and Electron browsers.
 
 ### `npx cypress open`
